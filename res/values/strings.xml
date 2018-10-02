@@ -8,4 +8,5 @@
     <string name="cps_lab_test">CPS Lab Test</string>
     <string name="name">Name</string>
     <string name="button">Button</string>
+    <string name="measuresensor">measureSensor</string>
 </resources>

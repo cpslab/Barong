@@ -7,7 +7,6 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
 import android.support.wearable.activity.WearableActivity
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 
