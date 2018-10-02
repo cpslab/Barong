@@ -10,34 +10,44 @@
     tools:deviceIds="wear"
     >
 
-    <FrameLayout
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/inner_frame_layout_padding"
-        android:boxedEdges="all"
-        >
+        android:padding="@dimen/inner_frame_layout_padding">
 
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cps_lab_test" />
+            android:text="@string/cps_lab_test"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/action_drawer_item_icon_size"
-            android:text="Button" />
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_play_circle_outline_white_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:contentDescription="measureSensor"/>
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/name" />
+            android:text="@string/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
 
 
-    </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
 </android.support.wear.widget.BoxInsetLayout>

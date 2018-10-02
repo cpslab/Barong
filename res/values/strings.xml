@@ -7,4 +7,5 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="cps_lab_test">CPS Lab Test</string>
     <string name="name">Name</string>
+    <string name="button">Button</string>
 </resources>
